@@ -1,6 +1,6 @@
 import { createServer } from "http";
 
-const port = 3000;
+const port = process.env.PORT || 80;
 
 const server = createServer((req, res) => {
   res.statusCode = 200;
@@ -9,5 +9,5 @@ const server = createServer((req, res) => {
 });
 
 server.listen(port, () => {
-  console.log(`Server running at port: ${port}/`);
+  console.log(`Server running at port: ${port}`);
 });
