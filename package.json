@@ -8,5 +8,6 @@
     "start": "node app.js"
   },
   "author": "Tony Lieu",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }
